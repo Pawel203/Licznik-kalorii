@@ -1,0 +1,74 @@
+﻿<Window x:Class="Licznik_kalorii.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Licznik_kalorii"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="300">
+    <Grid>
+
+        <StackPanel Name="MenuGlowne">
+            <StackPanel Name="Śniadanie" Margin="10">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0">
+                        <TextBlock>Śniadanie</TextBlock>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="5" Name="Śniadanie_Białko">B: 0</TextBlock>
+                            <TextBlock Margin="5" Name="Śniadanie_Tłuszcze">T: 0</TextBlock>
+                            <TextBlock Margin="5" Name="Śniadanie_Weglowodany">W: 0</TextBlock>
+                            <TextBlock Margin="5" Name="Śniadanie_Kalorie">| 0 Kcal</TextBlock>
+                        </StackPanel>
+                    </StackPanel>
+                    <Button Grid.Column="1" Click="Śniadanie_Dodaj">DODAJ</Button>
+                </Grid>
+            </StackPanel>
+
+            <StackPanel Name="Obiad" Margin="10">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0">
+                        <TextBlock>Obiad</TextBlock>
+                        
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="5" Name="Obiad_Białko">B: 0</TextBlock>
+                            <TextBlock Margin="5" Name="Obiad_Tłuszcze">T: 0</TextBlock>
+                            <TextBlock Margin="5" Name="Obiad_Weglowodany">W: 0</TextBlock>
+                            <TextBlock Margin="5" Name="Obiad_Kalorie">| 0 Kcal</TextBlock>
+                        </StackPanel>
+                    </StackPanel>
+                    <Button Grid.Column="1" Click="Obiad_Dodaj">DODAJ</Button>
+                </Grid>
+            </StackPanel>
+
+            <StackPanel Name="Kolacja" Margin="10">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0">
+                        <TextBlock>Kolacja</TextBlock>
+                        
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="5" Name="Kolacja_Białko">B: 0</TextBlock>
+                            <TextBlock Margin="5" Name="Kolacja_Tłuszcze">T: 0</TextBlock>
+                            <TextBlock Margin="5" Name="Kolacja_Weglowodany">W: 0</TextBlock>
+                            <TextBlock Margin="5" Name="Kolacja_Kalorie">| 0 Kcal</TextBlock>
+                        </StackPanel>
+                    </StackPanel>
+                    <Button Grid.Column="1" Click="Kolacja_Dodaj">DODAJ</Button>
+                </Grid>
+            </StackPanel>
+        </StackPanel>
+
+         <Frame Name="MainFrame" NavigationUIVisibility="Hidden"></Frame>
+    </Grid>
+</Window>

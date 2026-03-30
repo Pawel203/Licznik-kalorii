@@ -1,0 +1,34 @@
+﻿<Page x:Class="Licznik_kalorii.Posiłki"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Licznik_kalorii"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="300"
+      Title="Posiłki">
+
+    <Grid>
+        <StackPanel Background="White">
+            <TextBlock FontSize="20" HorizontalAlignment="Center" Margin="10">Wybierz posiłek</TextBlock>
+
+            <Button Content="Owsianka z owocami - 350 kcal (B:10 T:7 W:55)" Margin="2" Click="DodajOwsianka"/>
+            <Button Content="Jajecznica z 3 jaj - 300 kcal (B:18 T:22 W:2)" Margin="2" Click="DodajJajecznica"/>
+            <!--<Button Content="Kanapki z szynką i serem - 400 kcal (B:15 T:12 W:45)" Margin="2" Click="DodajKanapkiSzynka_Click"/>
+            <Button Content="Jogurt grecki z granolą - 320 kcal (B:12 T:6 W:40)" Margin="2" Click="DodajJogurt_Click"/>
+            <Button Content="Naleśniki z twarogiem - 450 kcal (B:14 T:15 W:60)" Margin="2" Click="DodajNalesniki_Click"/>
+            <Button Content="Tosty z awokado i jajkiem - 380 kcal (B:9 T:20 W:35)" Margin="2" Click="DodajTostyAwokado_Click"/>
+            <Button Content="Kurczak z ryżem i brokułem - 550 kcal (B:40 T:10 W:65)" Margin="2" Click="DodajKurczakRyz_Click"/>
+            <Button Content="Spaghetti Bolognese - 650 kcal (B:25 T:20 W:80)" Margin="2" Click="DodajSpaghetti_Click"/>
+            <Button Content="Łosoś pieczony z ziemniakami - 500 kcal (B:35 T:25 W:30)" Margin="2" Click="DodajLosos_Click"/>
+            <Button Content="Kotlet schabowy z purée - 750 kcal (B:30 T:40 W:60)" Margin="2" Click="DodajSchabowy_Click"/>
+            <Button Content="Zupa pomidorowa z makaronem - 250 kcal (B:8 T:5 W:35)" Margin="2" Click="DodajPomidorowa_Click"/>
+            <Button Content="Pierogi ruskie (6 sztuk) - 420 kcal (B:12 T:10 W:70)" Margin="2" Click="DodajPierogi_Click"/>
+            <Button Content="Sałatka z tuńczykiem - 280 kcal (B:25 T:15 W:10)" Margin="2" Click="DodajSalatkaTunczyk_Click"/>
+            <Button Content="Serek wiejski z rzodkiewką - 200 kcal (B:22 T:9 W:6)" Margin="2" Click="DodajSerekWiejski_Click"/>
+            <Button Content="Tortilla z kurczakiem - 450 kcal (B:25 T:15 W:50)" Margin="2" Click="DodajTortilla_Click"/>
+            <Button Content="Zapiekanka z warzywami - 350 kcal (B:15 T:12 W:40)" Margin="2" Click="DodajZapiekanka_Click"/>-->
+
+        </StackPanel>
+    </Grid>
+</Page>
